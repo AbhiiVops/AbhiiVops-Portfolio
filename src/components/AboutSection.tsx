@@ -68,7 +68,7 @@ const TAB_DATA: TabDataType[] = [
         <li><b>Unisys Semi Finalist 2024</b> - Organized by UNISYS</li>
         <li><b>SIH-Grand Finalist 2023</b> - Organized by Govt. of India</li>
         <li><b>SIDSET - Ideation Winner</b> - Organized by Postman</li>
-        <li><b>BITSHINE'23 Hackathon Winner</b> - Organized by BIT</li>
+        <li><b>BITSHINE&#39;23 Hackathon Winner</b> - Organized by BIT</li>
         <li><b>Educator of the Year</b> - Awarded by Nerdy Academy</li>
       </ul>
     ),
