@@ -28,7 +28,7 @@ const achievementsList = [
     postfix: "+",
   },
   {
-    metric: "Companies",
+    metric: "Internships",
     value: "3",
     postfix: "+",
   },
