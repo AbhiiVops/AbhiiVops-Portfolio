@@ -1,12 +1,17 @@
-import React from "react";
 import { motion } from "framer-motion";
+
+interface Props {
+  active: boolean;
+  selectTab: () => void;
+  children: React.ReactNode;
+}
 
 const variants = {
   default: { width: 0 },
   active: { width: "calc(100% - 0.75rem)" },
 };
 
-const TabButton = ({ active, selectTab, children }) => {
+const TabButton = ({ active, selectTab, children }: Props) => {
   const buttonClasses = active ? "text-white" : "text-[#ADB7BE]";
 
   return (
