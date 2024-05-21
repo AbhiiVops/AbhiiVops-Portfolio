@@ -50,24 +50,21 @@ const AchievementsSection = () => {
             <div
               key={index}
               className="relative flex flex-col items-center justify-center mx-4 my-4 sm:my-0"
-            >
-              <h2 className="flex text-white text-4xl font-bold">
-                {achievement.prefix && `${achievement.prefix} `}
-                <AnimatedNumbersWrapper
-                  includeComma
-                  animateToNumber={parseInt(achievement.value)}
-                  locale="en-US"
-                  className="text-white text-4xl font-bold"
-                  configs={(_, index: number) => {
-                    return {
-                      mass: 1,
-                      friction: 100,
-                      tension: 140 * (index + 1),
-                    };
-                  }}
-                />
-                {achievement.postfix && `${achievement.postfix} `}
-              </h2>
+            ><h2 className="flex text-white text-4xl font-bold">
+            <AnimatedNumbersWrapper
+              includeComma
+              animateToNumber={parseInt(achievement.value)}
+              locale="en-US"
+              className="text-white text-4xl font-bold"
+              configs={(_, index: number) => ({
+                mass: 1,
+                friction: 100,
+                tension: 140 * (index + 1),
+              })}
+            />
+            {achievement.postfix && ` ${achievement.postfix}`} {/* Note the space before postfix */}
+          </h2>
+          
               <p className="text-[#ADB7BE] text-base">{achievement.metric}</p>
             </div>
           );
