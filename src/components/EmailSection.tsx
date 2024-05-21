@@ -35,12 +35,10 @@ const EmailSection = () => {
     <section id="contact" className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div>
-        <h5 className="text-xl font-bold text-white my-2">Let&#39;s Connect</h5>
+        <h5 className="text-xl font-bold text-white my-2">Get in Touch</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           {" "}
-          I&#39;m currently looking for new opportunities, my inbox is always open.
-          Whether you have a question or just want to say hi, I&#39;ll try my best
-          to get back to you!
+          Don&#39;t hesitate to reach out! Whether you have a question, a potential project, or just want to connect, I&#39;d love to hear from you.
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/AbhiiVops">
@@ -48,6 +46,15 @@ const EmailSection = () => {
           </Link>
           <Link href="https://www.linkedin.com/in/abhishek-bhattacharjee-0747331a3/">
             <Image src='/linkedin-icon.svg' height={32} width={32} alt="Linkedin Icon" />
+          </Link>
+          <Link href="https://twitter.com/VopsAbhii">
+            <Image src='/twitter-icon.svg' height={32} width={32} alt="Twitter Icon" />
+          </Link>
+          <Link href="https://www.youtube.com/channel/UC7kPEYFjv4gvW5YI9xduBCQ">
+            <Image src='/youtube-icon.svg' height={32} width={32} alt="Youtube Icon" />
+          </Link>
+          <Link href="https://www.instagram.com/abhii.bhattacharya4321/">
+            <Image src='/instagram-icon.svg' height={32} width={32} alt="Instagram Icon" />
           </Link>
         </div>
       </div>
@@ -65,7 +72,7 @@ const EmailSection = () => {
               id="email"
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="jacob@google.com"
+              placeholder="Write your email"
               value={contactData.email}
               onChange={e => handleChange(e, "email")}
             />
@@ -82,7 +89,7 @@ const EmailSection = () => {
               id="subject"
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="Just saying hi"
+              placeholder="Just saying &#39;hi&#39;"
               value={contactData.subject}
               onChange={e => handleChange(e, "subject")}
             />

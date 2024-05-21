@@ -19,33 +19,37 @@ const AnimatedNumbersWrapper: React.FC<AnimatedNumbersProps> = (props) => {
 const achievementsList = [
   {
     metric: "Projects",
-    value: "30",
+    value: "10",
     postfix: "+",
   },
   {
-    prefix: "~",
-    metric: "Users",
-    value: "100,000",
+    metric: "Blogs",
+    value: "20",
+    postfix: "+",
   },
   {
-    metric: "Awards",
-    value: "7",
+    metric: "Companies",
+    value: "3",
+    postfix: "+",
   },
   {
-    metric: "Years",
-    value: "5",
+    metric: "Years of Experience",
+    value: "2",
+    postfix: "+",
   },
 ];
 
 const AchievementsSection = () => {
   return (
     <div className="py-8 xl:gap-16 sm:py-16">
-      <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
+      <div className="relative sm:border-gradient rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
+        <div className="absolute inset-0 rounded-md border-4 border-transparent bg-gradient-to-r from-purple-400 to-pink-600" />
+        <div className="absolute inset-0 rounded-md border-4 border-transparent bg-black" />
         {achievementsList.map((achievement, index) => {
           return (
             <div
               key={index}
-              className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0"
+              className="relative flex flex-col items-center justify-center mx-4 my-4 sm:my-0"
             >
               <h2 className="flex text-white text-4xl font-bold">
                 {achievement.prefix && `${achievement.prefix} `}
